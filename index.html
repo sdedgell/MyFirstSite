@@ -1,0 +1,107 @@
+<!-- Notes:
+1. Use col-lg for 1200+ (pc's), col-md for screens 992px+ (laptops), col-sm for 768px+ (tablets), & col-xs for anything less (Phones)
+2. visible-[screensize] & hidden-[screensiz] work to show or hide sections for certain screensizes
+ -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Blasting Off With Bootstrap</title>
+	<link href='css/bootstrap.css' rel='stylesheet'>
+	<link href='css/main.css' rel='stylesheet'>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+</head>
+<body>
+
+	<!-- These classes create a navbar that spans the width of the page inverse makes it black, and static-top puts it at the top of the page -->
+	<div class='navbar navbar-inverse navbar-static-top'>
+		<!-- This class adds margins to the content and centers it -->	
+		<div class='container'>
+			<!-- navbar takes up the entire width of the page -->
+			<a href='index.html' class='navbar-brand'>The Edgell Family Site</a>
+			<!-- This makes the items in the list appear as nav elements -->
+			<ul class='nav navbar-nav navbar-right'>
+				<li><a href='workout.html'>Workout Tool</a></li>
+				<li><a href='art.html'>Art</a></li>
+				<li><a href='competion.html'>Competition</a></li>
+				<li><a href='quotes.html'>Quotes</a></li>
+			</ul>
+		</div>
+	</div>
+
+		<!-- All columns in a row must add up to 12 -->
+		<div class='row well well-lg'>
+			<!-- This class forces the content to take up md-X cols on the pg -->
+			<div class='col-md-6'>
+				<h3>Our page to display those things that we love.</h3>
+				<button type='button' class='btn btn-primary'>
+					<i class='glyphicon glyphicon-transfer'></i>Click Me
+				</button>
+				<button type='button' class='btn btn-info'>
+					<i class='glyphicon glyphicon-transfer'></i>Click Again
+				</button>
+				<p>Not real sure what I'll put here....if anything.</p>
+			</div>
+
+			<!-- This class forces the content to take up md-X cols on the pg
+			and then adds offset-X cols of offset to the left of the content
+			Hide the image on xs screens (phones) -->
+			<div class='col-md-5 col-md-offset-1 hidden-xs'>
+				<img src='images/All of us.jpg' alt='Dumbells' class='img-thumbnail'/>
+			</div>
+		</div>
+	</div>
+
+	<!-- This class makes the content take up the entire width of the page -->
+	<div class='container-fluid'>
+
+		<!-- All columns in a row must add up to 12 -->
+		<div class='row'>
+			<!-- This class forces the content to take up md-X cols on the pg -->
+			<div class='col-md-3'>
+				<!-- Add an icon before the text -->
+				<h3><i class='glyphicon glyphicon-list-alt'></i>Shawn's Random Workout Tool</h3>
+				<p>Create constantly variable workouts with customizable lists of exercises.</p>
+			</div>
+
+			<!-- This class forces the content to take up md-X cols on the pg -->
+			<div class='col-md-3'>
+				<h3><i class='glyphicon glyphicon-pencil'></i>Ivey's Artwork</h3>
+				<p>This page will house some of our favorite pieces of Ivey's handmade artwork.</p>
+			</div>
+
+			<!-- This class forces the content to take up md-X cols on the pg -->
+			<div class='col-md-3'>
+				<h3><i class='glyphicon glyphicon-scale'></i>Mandy's Competition Resources</h3>
+				<p>Here you will find things that Amanda used to get herself ready for her latest bikini competition.</p>
+			</div>
+
+			<!-- This class forces the content to take up md-X cols on the pg -->
+			<div class='col-md-3'>
+				<h3><i class='glyphicon glyphicon-heart'></i>Maria's Inspirational Quotes</h3>
+				<p>You will find an assortment of quotes that Maria found most inspiring and meaningful.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- This class adds margins to the content and centers it -->
+	<div class='footer'>
+		<div class='container'>
+			<!-- All columns in a row must add up to 12 -->
+			<div class='row'>
+				<!-- Add a footer and add some icons -->
+	            <div class='clearfix visible-xs'></div>
+    	        <div class='col-xs-6'>
+        	    	<h4>Learn more about us</h4>
+            		<ul class='list-unstyled'>
+			            <li><a href='contact.html'><i class='glyphicon glyphicon-envelope'></i>Email Us</a></li>
+		                <li><a href='https://www.facebook.com/maria.edgell.3'><i class='glyphicon glyphicon-info-sign'></i>Maria's Facebook</a></li>
+		                <li><a href='https://www.facebook.com/amanda.edgell.37'><i class='glyphicon glyphicon-info-sign'></i>Mandy's Facebook</a></li>
+		            </ul>
+          		</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
